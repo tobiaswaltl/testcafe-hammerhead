@@ -887,6 +887,10 @@ describe('Script processor', () => {
                               '    location = __get$(_hh$temp0, "location"),' +
                               '    href = __get$(_hh$temp0, "href");',
                 },
+                {
+                    src:      'var {hasOwnProperty: gt} = x , ft = e=>class t extends (e || We) { } ;',
+                    expected: 'var_hh$temp0=x,gt=_hh$temp0.hasOwnProperty,ft=e=>class t extends (e||We){};'
+                },
             ]);
         });
 
